@@ -9,7 +9,7 @@ server = http.createServer(function(req, res) {
   var page = '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>'
     + '<script src="http://cdn.socket.io/stable/socket.io.js"></script>'
 
-  fs.readFile('app.js', function(err, js) {
+  fs.readFile('client.js', function(err, js) {
     page += '<script>' + js + '</script>'
     res.end(page)
   })
